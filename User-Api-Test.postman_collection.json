@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "8b2999a4-031f-472e-9941-e15d5a8b7116",
+		"name": "User-Api-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/rest-user-api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-user-api",
+						"user",
+						"2"
+					]
+				},
+				"description": "Get user details"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userID",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/rest-user-api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-user-api",
+						"user",
+						""
+					]
+				},
+				"description": "Delete user data"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userID",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test7777",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@testing.om",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "goa",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/rest-user-api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-user-api",
+						"user",
+						""
+					]
+				},
+				"description": "update user details\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "bangaloire",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/rest-user-api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-user-api",
+						"user",
+						""
+					]
+				},
+				"description": "add user details\t\t"
+			},
+			"response": []
+		}
+	]
+}
